@@ -3,45 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Links</title>
+  <title>Conectate Conmigo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: #fff;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      padding: 40px 20px;
-      height: 100vh;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
     }
+
+    .container {
+      background-color: #ffffff10;
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    }
+
     h1 {
+      font-size: 2rem;
       margin-bottom: 30px;
-      font-size: 2em;
+      font-weight: 600;
     }
+
     .link-button {
       display: block;
-      width: 100%;
-      max-width: 300px;
+      background-color: #fff;
+      color: #333;
       padding: 15px;
-      margin: 10px 0;
-      background: #007bff;
-      color: white;
-      text-align: center;
+      margin: 12px 0;
+      border-radius: 12px;
       text-decoration: none;
-      border-radius: 10px;
-      font-size: 1.1em;
-      transition: background 0.3s ease;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: transform 0.2s ease, background 0.3s ease;
     }
+
     .link-button:hover {
-      background: #0056b3;
+      transform: scale(1.03);
+      background-color: #f0f0f0;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
-  <h1>Conectate Conmigo</h1>
-  <a href="https://wa.me/+526612582191" class="link-button" target="_blank">WhatsApp</a>
-  <a href="https://www.facebook.com/share/1Ctds8eKoL/?mibextid=qi2Omg" class="link-button" target="_blank">Facebook</a>
+  <div class="container">
+    <h1>Connect With Me</h1>
+    <a href="https://wa.me/+526612582191" class="link-button" target="_blank">WhatsApp</a>
+    <a href="https://www.facebook.com/share/1Ctds8eKoL/?mibextid=qi2Omg" class="link-button" target="_blank">Facebook</a>
+    <footer>Made with ❤️</footer>
+  </div>
 </body>
 </html>
